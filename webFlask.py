@@ -10,6 +10,9 @@ app = Flask(__name__)
 def login():
 	return render_template("index.html")
 
+@app.route("/signUp")
+def signUp():
+     return render_template("signup.html")
 
 @app.route('/authenticate', methods=['POST'])
 def authenticate():
@@ -22,7 +25,7 @@ def authenticate():
     authenticated_user = next((user for user in users if user["username"] == username and user["password"] == password), None)
 
     if authenticated_user:
-        return "Authentication successful!"
+        return render_template("dashboard.html", name=username)
     else:
         return render_template("error.html")
 

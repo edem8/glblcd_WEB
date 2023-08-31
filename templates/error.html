@@ -1,37 +1,65 @@
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
     <title>BootStrap Login Form</title>
-</head>
+  </head>
 
-<body>
-    <section>   
-        <div class="container position-absolute top-50 start-50 translate-middle">
-            <div class="row">
-                <div class="col-12 col-sm-8 col-md-6 m-auto">
-                    <div class="card border-0">
-                        <div class="card-body  start-50 top-50">
-
-                            <img class="mb-4" src="/static/img/animation_llz9ywe2_small.gif" alt="" width="200" height="200">
-                            <p class="fs-4  fw-bold">Authentication Error</p>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+  <body>
+    <div class="container border-0 mt-5 start-50 top-50 p-5">
+      <div
+        class="card border-0 mt-5 p-5 w-50 position-absolute text-center"
+        style="margin-left: 15%; line-height: 13px"
+      >
+        <div class="mt-1 mb-2">
+          <img
+            class="mt-1 ms-2"
+            src="/static/img/66QptZIH6a.gif"
+            alt=""
+            width="140"
+            height="140"
+          />
         </div>
-    </section>
 
+        <div>
+          <h2
+            style="
+              font-size: 80px;
+              font-family: 'Poppins', sans-serif;
+              font-weight: 800;
+              letter-spacing: 4px;
+            "
+          >
+            401
+          </h2>
+          <p style="font-family: 'Poppins', sans-serif; font-weight: 500; color: gray; font-size: 12px;">Access is denied due to Inavlid credentials</p>
 
-</body>
-
+          <button
+            class="btn fw-bold"
+            style="font-size: 15px; background-color: royalblue; color: white"
+          >
+            <a href="/" style="text-decoration: none; color: white"
+              >Please go back to the previous page</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
