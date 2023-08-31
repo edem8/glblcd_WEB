@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 import json
-import variable1
-import variable2
+
 
 app = Flask(__name__)
 
@@ -17,7 +16,7 @@ def authenticate():
     username = request.form.get('username')
     password = request.form.get('password')
 
-    with open("./static/data.json") as json_file:
+    with open("./static/json/data.json") as json_file:
         users = json.load(json_file)
     
     authenticated_user = next((user for user in users if user["username"] == username and user["password"] == password), None)
