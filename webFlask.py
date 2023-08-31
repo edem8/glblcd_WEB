@@ -24,7 +24,7 @@ def authenticate():
     if authenticated_user:
         return "Authentication successful!"
     else:
-        return "Authentication failed. Please check your credentials."
+        return render_template("Authentication failed. Please check your credentials.")
 
 
 
