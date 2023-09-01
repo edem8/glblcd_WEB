@@ -47,7 +47,7 @@ def register():
      
      newUser = dict()
 
-     if password == confirmPassword:
+     if (password == confirmPassword and len(password) > 0 and len(confirmPassword) > 0):
           with open("./static/json/data.json", 'r') as json_file:
                 users = json.load(json_file)
                 newUser["username"] = username
